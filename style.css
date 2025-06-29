@@ -1,0 +1,90 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#output {
+	height:100%;
+    width:100%;
+	position: relative;
+  }
+  body {
+    margin:0;
+    background-color: #292521;
+    overflow:hidden;
+  }
+  button {
+      cursor:pointer;
+  }
+  #boardOutput {
+	height: 50vh;
+    width: 50vh;
+    /* image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor; */
+    /* cursor:pointer; */
+  }
+  #fps {
+    position:absolute;
+    right:10px;
+    top:10px;
+  }
+  #left-button {
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	width: 40%;
+	height: 10%;
+	align-items: center;
+  }
+  #left-button svg {
+	width: 100%;
+	height: 100%;
+  }
+  #right-button {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 40%;
+	height: 10%;
+	align-items: center;
+  }
+  #right-button svg {
+	width: 100%;
+	height: 100%;
+  }
+  .panel {
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%);
+	top:0px;
+	width:25%;
+	height:80%;
+	color: white;
+  }
+  .panel img {
+	height: 70%;
+	width: auto;
+	max-width: 100%;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+  }
+  .panel .size {
+	width: 100%;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	text-align: center;
+  }
+  .panel .name {
+	width: 100%;
+	text-align: center;
+  }
+  .panel .description {
+	width: 100%;
+	text-align: center;
+  }
+  
