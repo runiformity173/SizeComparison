@@ -8,36 +8,36 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body onload="initialLoad()">
+<body onload="initialLoad();nextImage();lastImage();">
   <div id="output">
 	<div class="panel" id="off-left-panel">
 		<h1 class="name"></h1>
 		<h2 class="description"></h2>
-		<img>
+		<div><span class="helper"></span><img></div>
 		<h2 class="size"></h2>
 	</div>
 	<div class="panel" id="left-panel">
 		<h1 class="name"></h1>
 		<h2 class="description"></h2>
-		<img>
+		<div><span class="helper"></span><img></div>
 		<h2 class="size"></h2>
 	</div>
 	<div class="panel" id="center-panel">
 		<h1 class="name"></h1>
 		<h2 class="description"></h2>
-		<img>
+		<div><span class="helper"></span><img></div>
 		<h2 class="size"></h2>
 	</div>
 	<div class="panel" id="right-panel">
 		<h1 class="name"></h1>
 		<h2 class="description"></h2>
-		<img>
+		<div><span class="helper"></span><img></div>
 		<h2 class="size"></h2>
 	</div>
 	<div class="panel" id="off-right-panel">
 		<h1 class="name"></h1>
 		<h2 class="description"></h2>
-		<img>
+		<div><span class="helper"></span><img></div>
 		<h2 class="size"></h2>
 	</div>
   </div>
@@ -47,6 +47,7 @@
 	  <button id="right-button" onclick="nextImage()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
 		<path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
 	  </svg></button>
+  <script src="encoding.js"></script>
   <script src="data.js"></script>
   <script src="script.js"></script>
 </body>

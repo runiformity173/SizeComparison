@@ -55,6 +55,7 @@ html, body {
 	height: 100%;
   }
   .panel {
+	font-size: 40%;
 	position: absolute;
 	left:50%;
 	transform: translateX(-50%);
@@ -62,16 +63,23 @@ html, body {
 	width:25%;
 	height:80%;
 	color: white;
-	transition: 0.2s ease-out;
+	transition: 1s ease-out;
   }
-  .panel img {
+  .panel div {
 	height: 70%;
 	width: auto;
 	max-width: 100%;
 	position: absolute;
 	left:50%;
-	top:50%;
-	transform: translate(-50%, -50%);
+	bottom:0;
+	transition: 1s ease-out;
+	transform: translateX(-50%);
+  }
+  .panel img {
+	width: auto;
+	max-width: 100%;
+	transition: 1s ease-out;
+	vertical-align: middle;
   }
   .panel .size {
 	width: 100%;
@@ -79,33 +87,71 @@ html, body {
 	left:0px;
 	bottom: 0px;
 	text-align: center;
+	transform: scale(2);
   }
   .panel .name {
 	width: 100%;
 	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	transform: scale(2);
   }
   .panel .description {
+	/* margin-top: 0; */
+	font-size: 120%;
 	width: 100%;
 	text-align: center;
+	transform: scale(2);
   }
   
 
+  .panel h1, .panel h2{
+	opacity: 0.0;
+	transition: opacity 0.5s;
+  }
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
 #off-left-panel {
 	transform: translateX(-50%) translateX(-100vw);
+}
+
+#off-left-panel img {
+	transform-origin: center right;
 }
 
 #left-panel {
 	transform: translateX(-50%) translateX(-100%);
 }
 
+#left-panel img {
+	transform-origin: center right;
+}
+
 #center-panel {
 	transform: translateX(-50%);
+}
+
+#center-panel h1, #center-panel h2 {
+	opacity: 1.0;
 }
 
 #right-panel {
 	transform: translateX(-50%) translateX(100%);
 }
 
+#right-panel img {
+	transform-origin: center left;
+}
+
 #off-right-panel {
 	transform: translateX(-50%) translateX(100vw);
+}
+
+#off-right-panel img {
+	transform-origin: center left;
 }
